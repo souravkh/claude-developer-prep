@@ -17,9 +17,9 @@ if not api_key:
 client = anthropic.Anthropic(api_key=api_key)
 
 # Make the API call
-# Note: Claude Haiku is recommended for testing as it is the most cost-effective.
+# Using claude-haiku-5-5 for fast and cost-effective testing
 message = client.messages.create(
-    model="claude-3-5-haiku-latest",
+    model="claude-haiku-5-5",
     max_tokens=1024,
     messages=[
         {"role": "user", "content": "Hello, world!"}
