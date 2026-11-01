@@ -20,6 +20,11 @@ claude-developer-prep/
 │   ├── 01_first_api_call.ipynb  # Step-by-step instructional notebook
 │   └── 01_first_api_call.py     # Standalone Python script
 │
+├── 02_agent/                    # Autonomous agent loop & tool use (function calling)
+│   ├── README.md                # Notes: Tool schemas, loop mechanics, stop reasons
+│   ├── agent_loop.ipynb         # Step-by-step instructional notebook
+│   └── agent_loop.py            # Standalone agent loop script
+│
 └── cheatsheets_and_notes/       # Quick-lookup reference guides
     ├── model_comparison.md      # Specs, context windows, and cost profiles
     └── error_codes_cheatsheet.md# API HTTP status codes and SDK exceptions
@@ -41,11 +46,9 @@ Add your key inside a `.env` file at the root of the project (refer to `.env.exa
 ANTHROPIC_API_KEY=your_actual_api_key_here
 ```
 
-### 3. Explore Module 01
-Navigate to [`01_basics_and_setup/`](01_basics_and_setup/):
-- **Interactive Guide:** Open [`01_first_api_call.ipynb`](01_basics_and_setup/01_first_api_call.ipynb) in your notebook editor.
-- **Python Script:** Review [`01_first_api_call.py`](01_basics_and_setup/01_first_api_call.py) for the standalone script implementation.
-- **Topic Notes:** Read [`01_basics_and_setup/README.md`](01_basics_and_setup/README.md) for conceptual fundamentals and common gotchas.
+### 3. Explore Modules
+- **Module 01 (Basics):** [`01_basics_and_setup/01_first_api_call.ipynb`](01_basics_and_setup/01_first_api_call.ipynb)
+- **Module 02 (Agent Loop):** [`02_agent/agent_loop.ipynb`](02_agent/agent_loop.ipynb)
 
 ---
 
