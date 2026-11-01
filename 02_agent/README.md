@@ -46,8 +46,9 @@ This module covers building an autonomous **Agent Loop** with Claude, implementi
 
 ## 2. Contents of this Module
 
-- [`agent_loop.ipynb`](agent_loop.ipynb): Step-by-step interactive tutorial on tool definitions, stop reasons, loop structure, and memory preservation.
-- [`agent_loop.py`](agent_loop.py): Standalone Python script implementation with safety iteration caps and intermediate thought logging.
+- [`agent_loop.ipynb`](agent_loop.ipynb): Step-by-step Python interactive tutorial on tool definitions, stop reasons, loop structure, and memory preservation.
+- [`agent_loop.py`](agent_loop.py): Standalone Python script with safety iteration caps and intermediate thought logging.
+- [`agent_loop_csharp.ipynb`](agent_loop_csharp.ipynb): **C# equivalent** using the `Anthropic.SDK` NuGet package in a Polyglot Notebook (VS Code). Includes a Python-vs-C# comparison table.
 
 ---
 

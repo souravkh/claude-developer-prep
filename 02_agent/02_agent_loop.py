@@ -56,11 +56,13 @@ messages = [
 max_iterations = 5
 current_iteration = 0
 
-while current_iteration < max_iterations:
+canPass =True
+
+while current_iteration < max_iterations or canPass:
     current_iteration += 1
 
     response = client.messages.create(
-        model="claude-sonnet-5-5",
+        model="claude-haiku-5-5",
         max_tokens=1024,
         tools=tools,
         messages=messages,
@@ -98,12 +100,7 @@ while current_iteration < max_iterations:
         # Feed back both the assistant's turn and the user's tool results
         messages.append({"role": "assistant", "content": response.content})
         messages.append({"role": "user", "content": tool_results})
-
-    else:
-        # Handle unexpected stop reasons (e.g. max_tokens)
-        print(f"Warning: Loop stopped with reason: {response.stop_reason}")
-        break
-
+        canPass =False
 
     else:
         # Handle unexpected stop reasons (e.g. max_tokens)
